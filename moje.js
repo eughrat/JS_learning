@@ -60,16 +60,127 @@
 
 // OBIEKTY
 
-let osoba = {
-    imie: "Krystian",
-    nazwisko: "BuzałaEloo323",
-    wiek: 33,
-    szkoły: {
-        podstawowa: "SP23",
-        gimnazjum: "KP02",
-        liceum, "break"
-    }
-};
+// let osoba = {
+//     imie: "Krystian",
+//     nazwisko: "BuzałaEloo323",
+//     wiek: 33,
+//     szkoły: {
+//         podstawowa: "SP23",
+//         gimnazjum: "KP02",
+//         liceum, "break"
+//     }
+// };
 
-osoba["wiek"] = "twoja stara"
-console.log(osoba.imie + " " + osoba.nazwisko + " " + osoba.wiek);
+// osoba["wiek"] = "twoja stara"
+// console.log(osoba.imie + " " + osoba.nazwisko + " " + osoba.wiek);
+
+// for (let i = 10; i > 0; i -= 2) {
+//     console.log('kot' + i);
+//     console.log(i + i);
+
+// }
+
+// let osoba = {
+//     imie: "Michał",
+//     nazwisko: "Piernicki"
+// }
+
+// for (x in osoba) {
+//     console.log(osoba)
+// }
+
+// let i = 0;
+// while (i<5){
+//     console.log(i)
+//     i++
+// }
+
+// FUNKCJE
+
+// let dodaj = function (a, b) {
+//     c = a + b
+//     console.log('elo mordo');
+//     console.log(c);
+//     return c;
+// }
+
+// j = dodaj(1, 3);
+// j;
+// dodaj2(1, j);
+
+// function dodaj2(a, b) {
+//     c = a + b
+//     console.log('elo mordo');
+//     console.log(c);
+//     return c;
+// }
+
+// let dodaj3 = (function (a, b) {
+//     c = a + b
+//     console.log('elo mordo');
+//     console.log(c);
+//     return c;
+// })(2, 6)
+
+// let dodajIPomnoz = function(x, y){
+//     let mnoznik = 3;
+//     let wynik = (x+y) * mnoznik;
+//     return wynik;
+// }
+
+// g = dodajIPomnoz(2,2)
+// console.log(g)
+
+// PETLE NA TABLICACH
+
+let osoby = [
+    {imie: "Jan", nazwisko: "Brzeczyszczykiewicz"},
+    {imie: "Jonasz", nazwisko: "Złotagóra"},
+    {imie: "Tymon", nazwisko: "Pumbon"},
+];
+
+// // for (let i = 0; i < osoby.length; i++) {
+// //     console.log(osoby[i]["imie"])
+// // };
+
+// osoby.forEach(function(osoba){
+//     console.log(osoba["imie"])
+// })
+
+// FILTER MAP REDUCE
+
+// let wynik = osoby.filter(function(osoba){
+//     if (osoba.imie != "Jan")
+//     return osoba;
+// })
+
+// console.log(wynik)
+
+// let mapowanie = osoby.map(function(osoba){
+//     return osoba.imie;
+// })
+
+// console.log(mapowanie)
+
+// let redukcja = osoby.reduce(function(total, osoba){
+//     return total + osoba.imie;
+// }, "")
+
+// console.log(redukcja)
+
+// BLEDY
+
+
+
+console.log("czesc");
+try{
+    let redukcja = osoby.reduced(function(total, osoba){
+        return total + osoba.imie;
+    }, "");
+} catch(err){
+    console.log(err);
+}
+
+
+
+ 
