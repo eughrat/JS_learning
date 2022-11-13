@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <script src="moje.js" type="text/javascript"></script>
+    <!-- <script src="moje.js" type="text/javascript"></script> -->
+
+
 </head>
 <body>
-    <nav>
+    <nav id="nawigacja">
         <ul>
             <li><button>Community</button></li>
             <li><a href="#">Portfolio</a></li>
@@ -19,10 +21,26 @@
             <li><a href="#">Feautures</a></li>
             <li><a href="#">Jobs</a></li>
         </ul>
+        <div class="lupa">lampa ok</div>
+        <div class="lupa">lampa ok elob</div>
+        <div class="lupa">Bilbo Swaggings</div>
+        <div class="lupa-alt">Bilbo Swaggings</div>
     </nav>
     <aside>
         <img id="banner" src="assets/main_baner.jpg">
     </aside>
+    <div>
+        &nbsp;
+    </div>
+    <section>
+        <form id="imie">
+            <input type="text" placeholder="wpisz swoje imie">
+            <button class="przycisk">Zatwierdz</button>
+        </form>
+    </section>
+    <div>
+        &nbsp;
+    </div>
     <section>
         <article class="grid-container">
             <div class="grid-item">
@@ -39,10 +57,10 @@
             </div>
         </article>
     </section>
-    <aside class="obrazki-grid">
-        <div><img src="assets/pic1.jpg" width="230px"></div>
-        <div><img src="assets/pic2.jpg" width="230px"></div>
-        <div><img src="assets/pic3.jpg" width="230px"></div>
+    <aside class="obrazki-grid" id="kratka">
+        <div class="elomelo320"><img src="assets/pic1.jpg" width="230px"></div>
+        <div class="elomelo320"><img src="assets/pic2.jpg" width="230px"></div>
+        <div class="elomelo320"><img src="assets/pic3.jpg" width="230px"></div>
     </aside>
     <footer>
         <div>
@@ -62,4 +80,5 @@
             <p>very small text goes here and something else</p>
         </div>
 </body>
+<script src="moje.js" type="text/javascript"></script>
 </html>

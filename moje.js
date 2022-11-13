@@ -1,6 +1,6 @@
 // INTRO
 
-// console.log("dupa")
+// console.log("ok")
 // let a = "2";
 // var b = String(3);
 // a = "cos innego";
@@ -51,11 +51,11 @@
 // console.log(zwierzeta)
 // zwierzeta.splice(1, 3, "twoja stara", "twoj stary", "twojej starej stary stary")
 
-// let dupa = zwierzeta.slice(0, 2)
+// let ok = zwierzeta.slice(0, 2)
 
 // console.log(zwierzeta)
 // console.log(zwierzeta.length)
-// console.log(dupa)
+// console.log(ok)
 
 
 // OBIEKTY
@@ -133,11 +133,11 @@
 
 // PETLE NA TABLICACH
 
-let osoby = [
-    {imie: "Jan", nazwisko: "Brzeczyszczykiewicz"},
-    {imie: "Jonasz", nazwisko: "Złotagóra"},
-    {imie: "Tymon", nazwisko: "Pumbon"},
-];
+// let osoby = [
+//     {imie: "Jan", nazwisko: "Brzeczyszczykiewicz"},
+//     {imie: "Jonasz", nazwisko: "Złotagóra"},
+//     {imie: "Tymon", nazwisko: "Pumbon"},
+// ];
 
 // // for (let i = 0; i < osoby.length; i++) {
 // //     console.log(osoby[i]["imie"])
@@ -168,19 +168,154 @@ let osoby = [
 
 // console.log(redukcja)
 
-// BLEDY
+// // BLEDY
 
 
 
-console.log("czesc");
-try{
-    let redukcja = osoby.reduced(function(total, osoba){
-        return total + osoba.imie;
-    }, "");
-} catch(err){
-    console.log(err);
+// console.log("czesc");
+// try{
+//     let redukcja = osoby.reduced(function(total, osoba){
+//         return total + osoba.imie;
+//     }, "");
+// } catch(err){
+//     console.log(err);
+// }
+
+
+
+//  DOM
+
+// let nav = document.getElementById("nawigacja");
+// const elo = document.getElementsByClassName("grid-item");
+// const tag = document.getElementsByTagName("h2");
+// const test = Array.from(tag)
+
+
+
+// console.log(Array.isArray(test));
+// console.log(test);
+// console.log(tag);
+
+// QUERY - znajduje pierwszy elemet
+
+
+// const query = document.querySelector('#nawigacja div.lupa'); 
+// // - znajduje pierwszy elemet
+// .elomelo320
+
+// const div = document.querySelector('nawigacja .lupa'); 
+// const nawArray = Array.from(queryall);
+// console.log(queryall);
+
+// for (let i=0; i<nawArray.length; i++){
+//     // console.log(nawArray[i].textContent = 'eloe elo 320' + i);
+//     // console.log(nawArray[i].parentElement.parentElement);
+//     console.log(nawArray[i].children);
+// }
+
+// window.addEventListener('load',function(evt){
+
+//     const nav = document.querySelector('#nawigacja'); 
+
+// const div = document.querySelector('#nawigacja .lupa');  
+// const dousuniecia = div.nexElementSibling;
+
+// nav.removeChild(dousuniecia)
+// console.log(dousuniecia);
+
+// const przycisk = document.createElement('button');
+// const text = document.createTextNode('Klik');
+
+// nav.appendChild(przycisk);
+// przycisk.appendChild(text);
+
+// console.log(nav);
+
+// // EVENTS 
+
+// nav.addEventListener('click', function(evt){
+//         // console.log(evt);
+//         console.log(evt.target);
+//     });
+// nav.addEventListener('click', function(evt){
+//     // console.log(evt);
+//     console.log(evt.target);
+// });
+
+
+// nav.addEventListener('mousemove', function(evt){
+//     // console.log(evt);
+//     console.log(evt);
+// });
+
+
+
+// });
+
+// FORMULARZE
+
+// window.addEventListener('load',function(evt){
+
+//     const formularz = document.forms['imie'];
+//     console.log(formularz)
+
+//     formularz.addEventListener('submit', function(evt){
+//         evt.preventDefault();
+//         const imie = formularz.querySelector('input[type="text"]').value;
+//         console.log(imie);
+//     });
+
+// });
+
+// KLASY
+
+// window.addEventListener('load', function (evt) {
+
+//     const formularz = document.forms['imie'];
+//     // console.log(formularz)
+//     // formularz.style.color = "red";
+//     // formularz.style.backgroundColor = "red";
+//     // formularz.style.padding = "20px";
+
+//     // formularz.className += "brazowy";
+
+//     // const przycisk = formularz.querySelector('input[type="button"]');
+//     const przycisk = formularz.querySelector('button');
+//     console.log(przycisk)
+
+
+//     // const wynik = przycisk.getAttribute('class');
+//     const wynik = przycisk.setAttribute('name',"przycisk");
+//     const nowa = przycisk.setAttribute('class',"brazowy");
+//     const czyma = przycisk.hasAttribute('class',"brazowy");
+//     console.log(czyma)
+
+
+//     formularz.classList.add("brazowy");
+//     formularz.classList.remove("brazowy");
+
+// });  
+
+// DATE & TIME
+
+// const mojaData = Date.now();
+// console.log(mojaData);
+// const mojaData = new Date("2018-01-14T12:23:45");
+// console.log(mojaData.getFullYear);
+
+// FUNKJCE INTERWAŁOWE
+
+function doKonsoli(){
+    licznik++;
+    console.log("witam! " + licznik);
+    if (licznik > 8){
+        clearInterval(interwal);
+    }
 }
 
+let licznik = 0;
 
 
- 
+// setTimeout(doKonsoli, 3000)
+ let interwal = setInterval(doKonsoli, 1000);
+
