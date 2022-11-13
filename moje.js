@@ -305,17 +305,70 @@
 
 // FUNKJCE INTERWAŁOWE
 
-function doKonsoli(){
-    licznik++;
-    console.log("witam! " + licznik);
-    if (licznik > 8){
-        clearInterval(interwal);
-    }
-}
+// function doKonsoli(){
+//     licznik++;
+//     console.log("witam! " + licznik);
+//     if (licznik > 8){
+//         clearInterval(interwal);
+//     }
+// }
 
-let licznik = 0;
+// let licznik = 0;
 
 
-// setTimeout(doKonsoli, 3000)
- let interwal = setInterval(doKonsoli, 1000);
+// // setTimeout(doKonsoli, 3000)
+//  let interwal = setInterval(doKonsoli, 1000);
 
+
+// KLASY
+
+// class Osoba {
+
+//     constructor(_imie){
+//         this.imie = _imie;
+//     }
+
+//     przywitajSie(pozdrowenie){
+//         console.log(pozdrowenie + ", jestem " + this.imie);
+//     }
+// }
+
+// let ja = new Osoba("michal");
+
+// ja.przywitajSie('ELOOOOSAODOAOSDOSODADSO');
+
+// EXTRA SYNTAX
+
+// let liczba = 1;
+
+// let cos = liczba > 2 ? "tak" : "nie";
+
+// // console.log(cos);
+
+// // function parzysta(liczba) {
+// //     return liczba % 2 == 0 ? true : false;
+// // }
+
+// let parzysta = (liczba) =>{
+//     return liczba % 2 == 0 ? true : false;
+// }
+
+// console.log(parzysta(4));
+
+// setTimeout(()=>{
+//     console.log(parzysta(5));
+// }, 1000)
+
+// CANVAS
+
+let can = document.getElementById('naszCanvas');
+
+let ctx = can.getContext('2d');
+
+ctx.beginPath();
+ctx.moveTo(20,20);
+ctx.lineTo(50, 60);
+ctx.stroke();
+
+ctx.font = "24px Arial";
+ctx.strokeText("Witam w canvas", 100, 100);

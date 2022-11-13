@@ -99,3 +99,9 @@ footer p {
     padding: 20px;
     background-color: brown;
 }
+
+#naszCanvas{
+    width: 300 px;
+    height: 200 px;
+    border: 1 px solid black;
+}
